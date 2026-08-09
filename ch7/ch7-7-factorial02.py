@@ -12,4 +12,4 @@ while True:
        print('輸入資料不符, 請重新輸入...')
  
 fac = d(n)
-print (f'{n}! = {fac}')
+print (f'{n}! ={fac}')
