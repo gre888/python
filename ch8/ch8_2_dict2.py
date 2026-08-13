@@ -1,0 +1,32 @@
+
+#dict說明 dict() 函式建立字典時，若傳入序列（Iterable），只接受 1 個主要的位置引數 (Positional Argument)註解說明：傳入的資料結構最外層必須是一個整體包裹起來的容器）
+
+dict1=dict(  (('一月','正月'),('二月','花月'))       )
+print(dict1)
+dict1=dict(    [['一月','正月'],['二月','花月']]   )
+print(dict1)
+
+dict2= dict.fromkeys(('四月','五月'))
+print('dict2=',dict2)
+dict2=dict.fromkeys(('一月','四月'),'端月')
+print('dict2=', dict2)
+print(dict1.keys())
+print('keys=', tuple(dict1.keys()))
+print('values=', tuple(dict1.values()))
+print(list(dict1.items()))
+print('get',dict2.get('三月'))
+print(dict2.setdefault('一月','梅月'))
+print('dict2=', dict2)
+print(dict2.setdefault('三月','梅月'))
+print('dict2=', dict2)
+print('pop',dict1.pop('10月',None))
+print('pop',dict1.pop('二月',None))
+print('dict1=', dict1)
+print('popitem',dict2.popitem())
+print('dict1_o=', dict1)
+dict1.update(dict2)
+print('dict2_o=', dict2)
+print('dict1 update=', dict1)
+dict1.clear()
+print('dict1=', dict1)
+del dict1
