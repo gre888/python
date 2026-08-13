@@ -1,3 +1,9 @@
+
+
+# factorial() 負責「做什麼」，main() 負責「整個程式怎麼跑」，if __name__ == "__main__" 負責「什麼時候開始跑」。
+# import factorial 如果別人呼叫會載入這個檔案，這時候就不會執行 main()，因為 __name__ 不是 "__main__"。
+# 遞迴寫法 factorial(n) = n * factorial(n-1)，但這裡使用迴圈寫法，避免遞迴深度過大導致程式崩潰。
+
 def factorial(n):
     """
     使用迴圈計算 n! (非遞迴寫法)

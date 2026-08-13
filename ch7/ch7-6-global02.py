@@ -5,8 +5,8 @@ def subpro():
     n = n + 10
     # 沒有使用 global 宣告，因此這裡的 m 是一個獨立的區域變數（Local Variable），僅在 subpro() 內部有效，不會影響外面的全域變數 m。
     m = 20
-    print('---- subpro -----')
-    print(f'n = {n}, m = {m}')
+    print('          ---- subpro -----')
+    print(f'sub n = {n}, sub m = {m}')
  
 # 初始化全域變數 n = 100 與 m = 200
 n = 100

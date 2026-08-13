@@ -1,0 +1,11 @@
+# Environment variables
+.env
+.env.local
+
+# Build output
+dist/
+build/
+
+# IDE/editor files
+.vscode/
+.idea/
