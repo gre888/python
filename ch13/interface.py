@@ -5,7 +5,7 @@ class Animal(ABC):
     @abstractmethod
     def sound(self):
         pass
-#dog cat 去繼承Animal 然後實作  介面規格繼承實做 才能用      
+#先有抽象類別Animal，再用dog cat 去繼承Animal 然後實作  介面規格繼承實做 才能用
 class Dog(Animal):
     def sound(self):
         return "Woof!"
